@@ -1,0 +1,12 @@
+package com.hiseoul.ml.service;
+
+import com.hiseoul.ml.model.MlCase;
+import com.hiseoul.ml.model.Result;
+
+public interface MlCaseService {
+	public Result createMlcase(MlCase mlcase);
+	public Result retrieveMlcaseList();
+	public Result retrieveMlcase(String ml_case_uuid);
+	public Result updateMlcase(MlCase mlcase);
+	public Result deleteMlcase(String ml_case_uuid)
+}

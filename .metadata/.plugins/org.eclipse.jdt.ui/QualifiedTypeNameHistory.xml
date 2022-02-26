@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.naming.java.javaURLContextFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="lombok.ToString"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.CctvInfoServiceImpl"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.Result"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.ErrorResponse"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.enumpkg.ServiceResult"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.RegionServiceImpl"/>
+    <fullyQualifiedTypeName name="java.security.Timestamp"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.repositories.CctvInfoRepository"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.CctvInfo"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.CctvInfoService"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.repositories.BizModelRepository"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.BizModelService"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.BizModel"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.controller.MemberController"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.repositories.MemberRepository"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.MemberService"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.Member"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.repositories.MenuCateRepository"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.MenuCateService"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.MenuCate"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.repositories.MlCaseRepository"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.MlCaseService"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.MlCase"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.repositories.RegionRepository"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.service.RegionService"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="com.hiseoul.ml.model.Region"/>
+</qualifiedTypeNameHistroy>

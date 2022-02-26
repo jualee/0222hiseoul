@@ -1,0 +1,11 @@
+package com.hiseoul.ml.service;
+
+import java.util.UUID;
+
+import com.hiseoul.ml.model.Result;
+
+public interface CctvInfoService {
+	public Result createCctvInfo(CctvInfoService cctvinfo);
+	public Result retrieveCctvInfoList();
+	public Result retrieveCctvInfo(UUID cctvuuid)
+}

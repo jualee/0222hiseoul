@@ -1,0 +1,12 @@
+package com.hiseoul.ml.service;
+
+import com.hiseoul.ml.model.CctvInfo;
+import com.hiseoul.ml.model.Result;
+
+public interface CctvInfoService {
+	public Result createCctvInfo(CctvInfoService cctvinfo);
+	public Result retrieveCctvInfoList();
+	public Result retrieveCctvInfo(String cctv_uuid);
+	public Result updateCctvInfo(CctvInfo cctvinfo);
+	public Result deleteCctvInfo(String cctv_uuid);
+}

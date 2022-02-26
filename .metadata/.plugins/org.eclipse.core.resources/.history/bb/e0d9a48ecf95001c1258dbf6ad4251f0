@@ -1,0 +1,40 @@
+package com.hiseoul.ml.model;
+
+import java.security.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="tb_ml_case")
+@Getter
+@Setter
+@ToString
+public class MlCase{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	private String ml_case_uuid;
+	private String ml_case_name;
+	private String ml_case_type;
+	private String ml_case_count;
+	private String ml_case_pre_count; 
+	private String ml_case_region_uuid;
+	ml_case_cctv_uuid uuid NOT NULL, -- cctv_info_uuid FK
+	ml_case_biz_model_uuid uuid NOT NULL, -- biz model uuid FK
+	ml_case_ml_number varchar NULL, -- try ml count number
+	ml_case_write_date timestamp NULL, -- 등록일자
+	ml_case_update_date timestamp NULL, -- 수정일자
+	ml_case_use_yn varchar NULL DEFAULT 'Y'::character varying, -- 사용여부
+	
+	
+}

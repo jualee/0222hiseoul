@@ -1,0 +1,9 @@
+package com.hiseoul.ml.service;
+
+import com.hiseoul.ml.model.Result;
+
+public interface BizModelService {
+	public Result createBizModel(BizModelService bizmodel);
+	public Result retrieveBizModelList();
+	public Result retrieveBizModel(String biz_model_uuid)
+}

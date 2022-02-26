@@ -1,0 +1,20 @@
+2022-02-19 13:37:26,608 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2022-02-19 13:45:16,297 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-02-19 13:50:22,832 [main] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\hslke\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2022-02-19 13:50:22,977 [Worker-13: Check Injection] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\hslke\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2022-02-19 14:13:41,715 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-02-19 15:41:35,605 [main] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\hslke\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2022-02-19 15:41:35,823 [Worker-27: Check Injection] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\hslke\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store
+2022-02-19 15:45:39,038 [Worker-26: Check Injection] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\hslke\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\.metadata\com.genuitec.eclipse.webclipse.livepreview\2\store
+2022-02-19 15:48:13,866 [ModalContext] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\hslke\git\hiseou10\.git]
+2022-02-19 16:32:27,715 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-02-19 16:46:47,617 [main] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\hslke\git\Monitoring\.git]
+2022-02-19 17:49:46,497 [Worker-19: Remove Repositories] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\hslke\workspace\.git]
+2022-02-19 19:43:50,840 [Worker-12: Git Repository Change Scanner] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\hslke\git\Monitoring\.git]
+2022-02-19 19:49:51,529 [Worker-16: Git Repository Change Scanner] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\hslke\git\Monitoring\.git]
+2022-02-21 08:51:22,781 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-02-21 09:56:21,166 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-02-22 17:32:46,150 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-02-25 08:46:14,820 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-02-25 12:17:16,802 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-02-26 04:43:30,238 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

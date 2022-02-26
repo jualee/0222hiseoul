@@ -1,0 +1,7 @@
+package com.hiseoul.ml.service;
+
+import com.hiseoul.ml.model.Result;
+
+public interface CctvInfoService {
+	public Result createCctvInfo(CctvInfoService cctvinfo);
+}

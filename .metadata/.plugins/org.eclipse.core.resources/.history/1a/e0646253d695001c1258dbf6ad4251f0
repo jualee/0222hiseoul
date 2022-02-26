@@ -1,0 +1,15 @@
+package com.hiseoul.ml.repositories;
+
+import java.security.Timestamp;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.hiseoul.ml.model.BizModel;
+
+public interface BizModelRepository extends JpaRepository<BizModel,Timestamp>{
+	public List<BizModel> findAllByOrderBybizmodel_write_date)esc();
+	
+	
+
+}

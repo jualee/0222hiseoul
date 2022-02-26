@@ -1,0 +1,42 @@
+package com.hiseoul.ml.model;
+
+import java.security.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="tb_region")
+@Getter
+@Setter
+@ToString
+public class Region{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	private String region_uuid;
+	private String region_name;
+	private String region_type;
+	private String region_address; 
+	private String region_post_code;
+	private String region_latitude;
+	private String region_longitude;
+	private String region_nation;
+	private String region_nation_code;
+	private Timestamp region_write_date;
+	private Timestamp region_update_date;
+	private String region_use_yn;
+
+
+	
+	
+}

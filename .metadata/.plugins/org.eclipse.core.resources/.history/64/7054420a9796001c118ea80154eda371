@@ -1,0 +1,6 @@
+package com.hiseoul.ml.service;
+
+public interface MemberService {
+	
+
+}

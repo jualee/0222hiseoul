@@ -1,0 +1,71 @@
+
+
+
+
+package com.hiseoul.ml.controller;
+
+import java.util.UUID;
+
+import org.apache.logging.log4j.LogManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hiseoul.ml.model.CctvInfo;
+import com.hiseoul.ml.model.Result;
+import com.hiseoul.ml.repositories.BizModelRepository;
+import com.hiseoul.ml.repositories.CctvInfoRepository;
+import com.hiseoul.ml.service.BizModelService;
+import com.hiseoul.ml.service.CctvInfoService;
+
+@RestController
+@RequestMapping(value="restapi/bizmodel")
+public class BizModelController {
+	private static final org.apache.logging.log4j.Logger Logger=LogManager.getLogger(BizModelController.class);
+	
+	@Autowired
+	BizModelRepository repository;
+	
+	@Autowired
+	BizModelService bizModelService;
+	
+	@GetMapping
+	public Result retrieveBizModelList() {
+		Result result = bizModelService.retrieveBizModelList();
+		return result;
+	}
+	
+	@GetMapping("/{bizModelUuid}")
+	public Result retrieveCctvInfo(@PathVariable UUID bizModelUuid) {
+		Result result = bizModelService.retrieveBizModel(bizModelUuid)
+		return result;
+	}
+	
+	@PostMapping
+	public Result createCctvInfo(@ModelAttribute CctvInfo cctvinfo) {
+		Result result = cctvInfoService.createCctvInfo(cctvinfo);
+		return result;
+	}
+	
+	@PutMapping
+	public Result updateCctvInfo(@ModelAttribute CctvInfo cctvinfo) {
+		Result result = cctvInfoService.updateCctvInfo(cctvinfo);
+		return result;
+	}
+	
+	@DeleteMapping
+	public Result deleteCctvInfo(@RequestParam UUID cctvUuid) {
+		Result result = cctvInfoService.deleteCctvInfo(cctvUuid);
+		return result;
+	}
+	
+}
+
+

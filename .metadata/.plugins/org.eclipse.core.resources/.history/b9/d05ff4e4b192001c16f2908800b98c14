@@ -1,0 +1,81 @@
+package com.hiseoul.ml.model;
+
+import java.security.Timestamp;
+import java.util.UUID;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="tb_biz_model")
+@Getter
+@Setter
+@ToString
+public class BizModel{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String biz_model_uuid;
+	private String biz_model_name;
+	private String biz_model_type;
+	private String biz_model_contents; 
+	private Timestamp biz_model_write_date;
+	private Timestamp biz_model_update_date; 
+	private String biz_model_use_yn; 
+	
+	public biz_model_uuid getUuid() {
+		return uuid;
+	}
+	public void setUuid(biz_model_uuid uuid) {
+		this.uuid = uuid;
+	}
+	public biz_model_name getName() {
+		return name;
+	}
+	public void setName(biz_model_name name) {
+		this.name = name;
+	}
+	public biz_model_type getType() {
+		return type;
+	}
+	public void setType(biz_model_type type) {
+		this.type = type;
+	}
+	public biz_model_contents getContents() {
+		return contents;
+	}
+	public void setContents(biz_model_contents contents) {
+		this.contents = contents;
+	}
+	public biz_model_write_date getWrite_date() {
+		return write_date;
+	}
+	public void setWrite_date(biz_model_write_date write_date) {
+		this.write_date = write_date;
+	}
+	public biz_model_update_date getUpdate_date() {
+		return update_date;
+	}
+	public void setUpdate_date(biz_model_update_date update_date) {
+		this.update_date = update_date;
+	}
+	public biz_model_use_yn getUse_yn() {
+		return use_yn;
+	}
+	public void setUse_yn(biz_model_use_yn use_yn) {
+		this.use_yn = use_yn;
+	}
+
+	
+	
+	
+}	
+	

@@ -1,0 +1,32 @@
+package com.hiseoul.ml.service;
+
+import java.util.Optional;
+
+import org.apache.logging.log4j.LogManager;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hiseoul.ml.enumpkg.ServiceResult;
+import com.hiseoul.ml.model.BizModel;
+import com.hiseoul.ml.model.ErrorResponse;
+import com.hiseoul.ml.model.Result;
+import com.hiseoul.ml.repositories.BizModelRepository;
+
+public class BizModelServiceImpl implements BizModelService{
+	private static final org.apache.logging.log4j.Logger 
+	Logger=LogManager.getLogger(BizModelServiceImpl.class);
+	
+	@Autowired
+	BizModelRepository repository;
+	
+	public Result updateBizModel(BizModel bizmodel) {
+		Optional<BizModel> searchOptional =repository.findById(bizmodel.getBiz_model_uuid());
+		Result result =new Result();
+
+		if(searchOptional.isPresent() ) {
+			bizmodel = repository.save(bizmodel);
+			result.setPayload(bizmodel);
+		}else {
+			result.setEror(new ErrorResponse(ServiceResult.NOTEEXIST.toString()));
+		}
+	}
+}

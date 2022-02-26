@@ -1,0 +1,63 @@
+
+package com.hiseoul.ml.controller;
+
+import org.apache.logging.log4j.LogManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import com.hiseoul.ml.model.MenuCate;
+import com.hiseoul.ml.model.Result;
+import com.hiseoul.ml.repositories.MenuCateRepository;
+import com.hiseoul.ml.service.MenuCateService;
+
+@RestController
+@RequestMapping(value="restapi/menucate")
+public class MenuCateController {
+	private static final org.apache.logging.log4j.Logger Logger=LogManager.getLogger(MenuCateController.class);
+	
+	@Autowired
+	MenuCateRepository repository;
+	
+	@Autowired
+	MenuCateService menuCateService;
+	
+	@GetMapping
+	public Result retrieveMenuCateList() {
+		Result result = menuCateService.retrieveMenuCateList();
+		return result;
+	}
+	
+	@GetMapping("/{cateno}")
+	public Result retrieveMenuCate(@PathVariable Integer cateno) {
+		Result result = menuCateService.retrieveMenuCate(cateno);
+		return result;
+	}
+	
+	@PostMapping
+	public Result createMenuCate(@ModelAttribute MenuCate menucate) {
+		Result result = menuCateService.createMenuCate(menucate);
+		return result;
+	}
+	
+	@PutMapping
+	public Result updateMenuCate(@ModelAttribute MenuCate menucate) {
+		Result result = menuCateService.updateMenuCate(menucate);
+		return result;
+	}
+	
+	@DeleteMapping
+	public Result deleteMenuCate(@RequestParam Integer cateno) {
+		Result result = menuCateService.deleteMenuCate(cateno);
+		return result;
+	}
+	
+}
+
+

@@ -1,0 +1,40 @@
+package com.hiseoul.ml.model;
+
+import java.security.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="tb_member")
+@Getter
+@Setter
+@ToString
+public class Member{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	private Integer no ; 
+	private String id; 
+	private String pass;
+	private String name;
+	private String email;
+	private String instance_yn;
+	private Timestamp write_date;
+	private Timestamp up_date ;
+	private String active_yn ;
+	private Integer permission;
+
+
+
+	
+}

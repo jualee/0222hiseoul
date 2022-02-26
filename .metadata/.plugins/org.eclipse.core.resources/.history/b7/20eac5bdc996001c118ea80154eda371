@@ -1,0 +1,42 @@
+package com.hiseoul.ml.model;
+
+import java.security.Timestamp;
+
+import java.util.UUID;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="tb_biz_model")
+@Getter
+@Setter
+@ToString
+public class BizModel{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	private String biz_model_name;
+	@Column(name = "biz_model_uuid")
+	UUID bizModelUuid;
+	
+	private String biz_model_type;
+	private String biz_model_contents; 
+	
+	@Column(name = "biz_model_write_date")
+	Timestamp bizModelWriteDate;
+	
+	private Timestamp biz_model_update_date; 
+	private String biz_model_use_yn;
+}	
+	

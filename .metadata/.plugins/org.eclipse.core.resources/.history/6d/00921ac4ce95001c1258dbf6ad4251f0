@@ -1,0 +1,38 @@
+package com.hiseoul.ml.model;
+
+import java.security.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="tb_member")
+@Getter
+@Setter
+@ToString
+public class MemnuCate{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	cate_no serial4 NOT NULL,
+	menu_name varchar NULL, -- menu name
+	menu_perm int4 NULL DEFAULT 1, -- User permission
+	parant_no int4 NULL, -- 부모의 cate_no
+	uri varchar NULL, -- menu 최종 경로 
+	menu_use_yn varchar NULL DEFAULT 'Y'::character varying,
+	write_date timestamp NULL, -- 기록일자
+	update_date timestamp NULL, -- 수정일자
+
+
+
+	
+}

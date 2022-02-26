@@ -1,0 +1,38 @@
+package com.hiseoul.ml.model;
+
+import java.security.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="tb_member")
+@Getter
+@Setter
+@ToString
+public class MemnuCate{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	private Integer cate_no;
+	private String menu_name;
+	private Integer menu_perm;
+	private Integer parant_no;
+	private String uri;
+	private String menu_use_yn;
+	private Timestamp write_date;
+	private Timestamp  update_date;
+
+
+
+	
+}

@@ -1,0 +1,11 @@
+package com.hiseoul.ml.service;
+
+import org.apache.logging.log4j.LogManager;
+
+public class MemberServiceImpl implements MemberService{
+	private static final org.apache.logging.log4j.Logger 
+	Logger=LogManager.getLogger(MemberServiceImpl.class);
+		
+	}
+
+}

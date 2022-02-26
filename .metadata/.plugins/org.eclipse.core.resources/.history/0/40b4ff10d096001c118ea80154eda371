@@ -1,0 +1,5 @@
+package com.hiseoul.ml.controller;
+
+public class MemberController {
+
+}
